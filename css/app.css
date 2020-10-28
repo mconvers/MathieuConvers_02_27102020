@@ -537,11 +537,13 @@ section h2 {
           justify-content: space-between;
   margin: 30px 0;
 }
+
 .encart {
   border-radius: 10px;
   background-color: #F2F2F2;
   padding: 20px;
 }
+
 .content {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 880px;
@@ -549,6 +551,17 @@ section h2 {
   min-width: 670px;
   margin-right: 20px;
 }
+
+.sidebar {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 400px;
+          flex: 0 1 400px;
+  min-width: 310px;
+}
+.sidebar .cards .card {
+  max-width: 100%;
+}
+
 .cards {
   margin: 20px 0 0;
   display: -webkit-box;
@@ -651,6 +664,31 @@ section h2 {
 }
 .card_rating .material-icons.empty {
   color: #d9d9d9;
+}
+.card--inline {
+  max-width: 300px;
+  min-width: 200px;
+}
+.card--inline a {
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.card--inline .card_image {
+  max-height: 135px;
+  max-width: 135px;
+  height: 135px;
+}
+.card--inline .card_image img {
+  max-width: 200%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 200%;
+          flex: 0 0 200%;
 }
 .card :hover .card_image img {
   -webkit-transform: scale(1.1);
