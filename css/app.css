@@ -1043,6 +1043,11 @@ section h2 {
   padding: 30px;
   background-color: #d9d9d9;
 }
+@media (max-width: 480px) {
+  .footer {
+    padding: 30px 0px;
+  }
+}
 .footer_content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1051,6 +1056,12 @@ section h2 {
       -ms-flex-align: start;
           align-items: flex-start;
 }
+@media (max-width: 480px) {
+  .footer_content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 .footer_list {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 320px;
@@ -1058,6 +1069,14 @@ section h2 {
   margin: 0;
   margin-right: 20px;
   padding: 0;
+}
+@media (max-width: 480px) {
+  .footer_list {
+    margin-bottom: 30px;
+  }
+  .footer_list:last-child {
+    margin-bottom: 0;
+  }
 }
 .footer_list:last-child {
   margin-right: 0;
