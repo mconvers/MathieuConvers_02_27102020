@@ -428,6 +428,11 @@ pre {
   font-size: 1.125rem;
   font-weight: bold;
 }
+@media (max-width: 480px) {
+  .main h1 {
+    font-size: 1.25rem;
+  }
+}
 .main .row {
   margin-top: 20px;
 }
@@ -438,6 +443,19 @@ pre {
 }
 .main .input-group .mobile {
   display: none;
+}
+@media (max-width: 480px) {
+  .main .input-group {
+    width: 100%;
+  }
+  .main .input-group .mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .main .input-group .desktop {
+    display: none;
+  }
 }
 .main .input-group_prepend, .main .input-group_postpend {
   background-color: #F2F2F2;
@@ -458,6 +476,13 @@ pre {
   font-weight: bold;
   padding: 0 15px;
 }
+@media (max-width: 480px) {
+  .main .input-group_prepend, .main .input-group_postpend {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 40px;
+            flex: 0 0 40px;
+  }
+}
 .main .input-group_prepend {
   border-radius: 10px 0 0 10px;
   height: 40px;
@@ -466,10 +491,22 @@ pre {
 .main .input-group_postpend {
   border-radius: 0 10px 10px 0;
 }
+@media (max-width: 480px) {
+  .main .input-group_postpend {
+    border-radius: 10px;
+  }
+}
 .main .form-control {
   border: 1px solid #F2F2F2;
   padding: 10px;
   font-weight: bold;
+}
+@media (max-width: 480px) {
+  .main .form-control {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100px;
+            flex: 1 1 100px;
+  }
 }
 
 .filters {
@@ -480,9 +517,20 @@ pre {
       -ms-flex-align: stretch;
           align-items: stretch;
 }
+@media (max-width: 480px) {
+  .filters {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 .filters_title {
   font-weight: bold;
   margin: 12px 20px 0 0;
+}
+@media (max-width: 480px) {
+  .filters_title {
+    margin-bottom: 10px;
+  }
 }
 
 .chips {
@@ -586,6 +634,18 @@ pre {
   padding: 3px 0 0;
   font-weight: bold;
   margin-right: 10px;
+}
+@media (max-width: 480px) {
+  .info-line {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+@media (max-width: 1020px) {
+  .info-line {
+    margin-bottom: 20px;
+  }
 }
 
 section h2 {
