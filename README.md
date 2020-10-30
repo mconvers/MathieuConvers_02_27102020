@@ -1,4 +1,4 @@
-# MathieuConvers_02_27102020
+# MathieuConvers_02_27102020 (Projet formation)
 
 ## Install
 
