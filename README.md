@@ -3,8 +3,8 @@
 ## Install
 
 > Installation requires
-> * nodejs 6.5.0 (see https://github.com/creationix/nvm)
-> * yarn (see https://yarnpkg.com/lang/en/docs/install/#mac-tab)
+> * nodejs 
+> * yarn
 
 ```
 git clone https://github.com/mconvers/MathieuConvers_02_27102020.git
